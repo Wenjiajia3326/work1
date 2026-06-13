@@ -12,7 +12,7 @@
   --text: #1a1a1a;             /* 文字主色 - 卡片内深色文字 */
   --text-secondary: #666666;   /* 文字辅色 */
   --text-light: #ffffff;       /* 浅色文字（深色背景上） */
-  --text-muted: #999999;       /* 弱化文字 */
+  --text-muted: #b0b0b0;       /* 弱化文字 */
   --border: #e0e0e0;           /* 边框色 */
   --radius: 20px;              /* 统一圆角 - 设计稿 --radius-md: 20px */
   --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.08);
@@ -783,6 +783,31 @@ button {
   color: var(--primary);
   font-weight: 700;
   flex-shrink: 0;
+}
+
+/* 价格方案选择按钮 - 未选中状态使用中性色 */
+.pricing-card .btn {
+  background: transparent;
+  color: var(--text-secondary);
+  border-color: var(--border);
+}
+
+.pricing-card .btn:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* 选中状态使用金色 */
+.pricing-card .btn.btn-primary {
+  background: linear-gradient(135deg, #d4a574, #b8915f);
+  color: #1a1a1a;
+  border-color: transparent;
+}
+
+.pricing-card .btn.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(212, 165, 116, 0.35);
+  opacity: 0.92;
 }
 
 /* ============================================================

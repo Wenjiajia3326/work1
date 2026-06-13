@@ -119,14 +119,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const amounts = document.querySelectorAll('.amount');
   const periods = document.querySelectorAll('.period');
   const saves = document.querySelectorAll('.pricing-save');
-  
+
   toggleBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const period = btn.dataset.period;
-      
+
       toggleBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      
+
       amounts.forEach(amount => {
         if (period === 'yearly') {
           amount.textContent = Number(amount.dataset.yearly).toLocaleString();
@@ -134,11 +134,11 @@ document.addEventListener('DOMContentLoaded', function() {
           amount.textContent = Number(amount.dataset.monthly).toLocaleString();
         }
       });
-      
+
       periods.forEach(p => {
         p.textContent = period === 'yearly' ? '/年' : '/月';
       });
-      
+
       saves.forEach(save => {
         if (period === 'yearly') {
           save.classList.add('show');
@@ -146,6 +146,22 @@ document.addEventListener('DOMContentLoaded', function() {
           save.classList.remove('show');
         }
       });
+    });
+  });
+
+  // 价格方案选择按钮切换
+  const pricingBtns = document.querySelectorAll('.pricing-card .btn');
+
+  pricingBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // 移除所有按钮的选中状态
+      pricingBtns.forEach(b => {
+        b.classList.remove('btn-primary');
+        b.classList.add('btn-secondary');
+      });
+      // 当前按钮设为选中状态
+      btn.classList.remove('btn-secondary');
+      btn.classList.add('btn-primary');
     });
   });
   
