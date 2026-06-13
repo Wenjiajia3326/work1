@@ -4,8 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>服务 - 云创科技</title>
+  
+  <title>服务与产品 - 云创科技</title>
+  <meta name="description" content="网站建设、移动开发、技术咨询三大核心服务。基础版¥999/月起，专业团队交付。">
+  <meta name="keywords" content="网站建设价格,移动开发服务,技术咨询,企业数字化转型">
+  
+  <meta property="og:title" content="云创科技 - 服务与产品">
+  <meta property="og:description" content="网站建设、移动开发、技术咨询，三大核心服务助力企业数字化。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.jiajiawen.xyz/services.html">
+  
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <!-- 1. 导航栏（与 index.html 相同，但服务页高亮） -->
@@ -243,94 +253,9 @@
     </div>
   </footer>
 
-  <script>
-    // Tab 切换逻辑
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const tabContents = document.querySelectorAll('.tab-content');
+  <!-- ====== 增强：返回顶部按钮 ====== -->
+  <button id="back-to-top" title="返回顶部" aria-label="返回顶部">↑</button>
 
-    tabBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const tabId = btn.dataset.tab;
-        
-        tabBtns.forEach(b => b.classList.remove('active'));
-        tabContents.forEach(c => c.classList.remove('active'));
-        
-        btn.classList.add('active');
-        document.getElementById(tabId).classList.add('active');
-      });
-    });
-
-    // 价格切换逻辑
-    const toggleBtns = document.querySelectorAll('.toggle-btn');
-    const amounts = document.querySelectorAll('.amount');
-    const periods = document.querySelectorAll('.period');
-    const saves = document.querySelectorAll('.pricing-save');
-
-    toggleBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const period = btn.dataset.period;
-        
-        toggleBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        
-        amounts.forEach(amount => {
-          if (period === 'yearly') {
-            amount.textContent = Number(amount.dataset.yearly).toLocaleString();
-          } else {
-            amount.textContent = Number(amount.dataset.monthly).toLocaleString();
-          }
-        });
-        
-        periods.forEach(p => {
-          p.textContent = period === 'yearly' ? '/年' : '/月';
-        });
-        
-        saves.forEach(save => {
-          if (period === 'yearly') {
-            save.classList.add('show');
-          } else {
-            save.classList.remove('show');
-          }
-        });
-      });
-    });
-
-    // FAQ 手风琴逻辑
-    const faqItems = document.querySelectorAll('.faq-item');
-
-    faqItems.forEach(item => {
-      const question = item.querySelector('.faq-question');
-      
-      question.addEventListener('click', () => {
-        const isActive = item.classList.contains('active');
-        
-        faqItems.forEach(i => i.classList.remove('active'));
-        
-        if (!isActive) {
-          item.classList.add('active');
-        }
-      });
-    });
-
-    // 汉堡菜单逻辑
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    navToggle.addEventListener('click', () => {
-      navToggle.classList.toggle('active');
-      navLinks.classList.toggle('active');
-    });
-
-    // 导航栏滚动效果
-    const navbar = document.querySelector('.navbar');
-
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
-  </script>
+  <script src="script.js" defer></script>
 </body>
 </html>
