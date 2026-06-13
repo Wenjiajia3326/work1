@@ -1,0 +1,336 @@
+<!-- ===== FILE: src/services.html ===== -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>服务 - 云创科技</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 1. 导航栏（与 index.html 相同，但服务页高亮） -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">云</span>
+        云创科技
+      </a>
+      <button class="nav-toggle" aria-label="菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">首页</a></li>
+        <li><a href="services.html" class="nav-link active">服务</a></li>
+        <li><a href="#services" class="nav-link">案例</a></li>
+        <li><a href="#contact" class="nav-link">联系我们</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 2. 页面标题区 -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title">我们的服务</h1>
+      <p class="page-subtitle">专业的数字化解决方案，助力企业转型升级</p>
+    </div>
+  </section>
+
+  <!-- 3. Tab 切换区 -->
+  <section class="tabs-section">
+    <div class="container">
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-tab="website">网站建设</button>
+        <button class="tab-btn" data-tab="mobile">移动开发</button>
+        <button class="tab-btn" data-tab="consulting">技术咨询</button>
+      </div>
+
+      <!-- 4. Tab 内容区 -->
+      <div class="tab-content active" id="website">
+        <div class="tab-panel">
+          <h3>网站建设</h3>
+          <p class="description">
+            从企业官网到电商平台，从品牌展示到功能应用，我们提供全方位的网站建设服务。采用最新技术栈，确保网站性能卓越、体验流畅，帮助企业建立专业的线上形象。
+          </p>
+          <ul class="features-list">
+            <li><span class="check">✓</span>响应式设计，完美适配各种设备</li>
+            <li><span class="check">✓</span>SEO 优化，提升搜索引擎排名</li>
+            <li><span class="check">✓</span>高性能架构，秒级加载速度</li>
+            <li><span class="check">✓</span>内容管理系统，轻松更新维护</li>
+          </ul>
+          <div class="case-highlight">
+            <strong>代表案例：</strong>某商业银行官网重构项目，日均访问量提升 300%
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="mobile">
+        <div class="tab-panel">
+          <h3>移动开发</h3>
+          <p class="description">
+            iOS、Android 原生应用及跨平台解决方案，让您的业务触达每一位移动用户。我们注重用户体验，打造流畅、稳定的移动应用，帮助企业拓展移动业务版图。
+          </p>
+          <ul class="features-list">
+            <li><span class="check">✓</span>原生性能，流畅用户体验</li>
+            <li><span class="check">✓</span>跨平台开发，降低开发成本</li>
+            <li><span class="check">✓</span>离线支持，无网络也能使用</li>
+            <li><span class="check">✓</span>推送通知，精准触达用户</li>
+          </ul>
+          <div class="case-highlight">
+            <strong>代表案例：</strong>某零售集团会员 APP，月活用户突破 50 万
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="consulting">
+        <div class="tab-panel">
+          <h3>技术咨询</h3>
+          <p class="description">
+            资深技术团队提供架构设计、技术选型、性能优化等全方位咨询服务。帮助企业解决技术难题，规划技术路线，确保项目成功落地，实现业务目标。
+          </p>
+          <ul class="features-list">
+            <li><span class="check">✓</span>架构设计，确保系统可扩展性</li>
+            <li><span class="check">✓</span>技术选型，选择最适合的方案</li>
+            <li><span class="check">✓</span>性能优化，提升系统响应速度</li>
+            <li><span class="check">✓</span>安全评估，保障数据安全</li>
+          </ul>
+          <div class="case-highlight">
+            <strong>代表案例：</strong>某制造企业数字化转型咨询，年度成本降低 40%
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. 价格表 -->
+  <section class="pricing-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">透明定价</h2>
+        <p class="section-subtitle">选择适合您的方案</p>
+      </div>
+
+      <div class="pricing-toggle">
+        <button class="toggle-btn active" data-period="monthly">月付</button>
+        <button class="toggle-btn" data-period="yearly">年付</button>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- 基础版 -->
+        <div class="pricing-card">
+          <h3 class="pricing-name">基础版</h3>
+          <div class="pricing-price">
+            <span class="currency">¥</span>
+            <span class="amount" data-monthly="999" data-yearly="9990">999</span>
+            <span class="period">/月</span>
+          </div>
+          <div class="pricing-save">省 2 个月</div>
+          <ul class="pricing-features">
+            <li>基础功能模块</li>
+            <li>5GB 存储空间</li>
+            <li>邮件支持</li>
+            <li>基础数据分析</li>
+          </ul>
+          <button class="btn btn-secondary">选择方案</button>
+        </div>
+
+        <!-- 专业版 -->
+        <div class="pricing-card featured">
+          <div class="pricing-badge">最受欢迎</div>
+          <h3 class="pricing-name">专业版</h3>
+          <div class="pricing-price">
+            <span class="currency">¥</span>
+            <span class="amount" data-monthly="2999" data-yearly="29990">2,999</span>
+            <span class="period">/月</span>
+          </div>
+          <div class="pricing-save">省 2 个月</div>
+          <ul class="pricing-features">
+            <li>全部基础版功能</li>
+            <li>50GB 存储空间</li>
+            <li>优先技术支持</li>
+            <li>高级数据分析</li>
+            <li>API 接口访问</li>
+          </ul>
+          <button class="btn btn-primary">选择方案</button>
+        </div>
+
+        <!-- 企业版 -->
+        <div class="pricing-card">
+          <h3 class="pricing-name">企业版</h3>
+          <div class="pricing-price">
+            <span class="currency">¥</span>
+            <span class="amount" data-monthly="5999" data-yearly="59990">5,999</span>
+            <span class="period">/月</span>
+          </div>
+          <div class="pricing-save">省 2 个月</div>
+          <ul class="pricing-features">
+            <li>全部专业版功能</li>
+            <li>无限存储空间</li>
+            <li>专属客户经理</li>
+            <li>定制化开发</li>
+            <li>SLA 服务保障</li>
+            <li>培训与咨询</li>
+          </ul>
+          <button class="btn btn-secondary">联系销售</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FAQ 区 -->
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title">常见问题</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>项目开发周期多长？</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>项目开发周期根据需求复杂度而定。一般网站建设项目的开发周期为 4-8 周，移动应用开发为 8-16 周。我们会在项目启动前提供详细的时间规划。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>是否提供售后服务？</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>是的，我们提供完善的售后服务。项目交付后享有 3 个月免费维护期，期间提供 Bug 修复、小功能调整等服务。之后可选择购买年度维护套餐。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>能否定制化开发？</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>当然可以。我们提供完全定制化的开发服务，根据您的具体需求进行设计和开发。从功能模块到界面设计，都可以按照您的要求量身打造。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>如何保证项目质量？</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>我们采用敏捷开发流程，每个阶段都有严格的质量控制。包括代码审查、自动化测试、性能测试等环节。项目交付前会进行全面的验收测试，确保达到预期标准。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. 页脚（与 index.html 完全相同） -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">云创科技</div>
+        <p class="footer-tagline">让数字化更简单</p>
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">首页</a>
+          <a href="services.html" class="footer-link">服务</a>
+          <a href="#services" class="footer-link">案例</a>
+          <a href="#contact" class="footer-link">联系我们</a>
+        </div>
+        <p class="footer-copyright">&copy; 2026 云创科技. 保留所有权利.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Tab 切换逻辑
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tabId = btn.dataset.tab;
+        
+        tabBtns.forEach(b => b.classList.remove('active'));
+        tabContents.forEach(c => c.classList.remove('active'));
+        
+        btn.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+
+    // 价格切换逻辑
+    const toggleBtns = document.querySelectorAll('.toggle-btn');
+    const amounts = document.querySelectorAll('.amount');
+    const periods = document.querySelectorAll('.period');
+    const saves = document.querySelectorAll('.pricing-save');
+
+    toggleBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const period = btn.dataset.period;
+        
+        toggleBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        amounts.forEach(amount => {
+          if (period === 'yearly') {
+            amount.textContent = Number(amount.dataset.yearly).toLocaleString();
+          } else {
+            amount.textContent = Number(amount.dataset.monthly).toLocaleString();
+          }
+        });
+        
+        periods.forEach(p => {
+          p.textContent = period === 'yearly' ? '/年' : '/月';
+        });
+        
+        saves.forEach(save => {
+          if (period === 'yearly') {
+            save.classList.add('show');
+          } else {
+            save.classList.remove('show');
+          }
+        });
+      });
+    });
+
+    // FAQ 手风琴逻辑
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        faqItems.forEach(i => i.classList.remove('active'));
+        
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+
+    // 汉堡菜单逻辑
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // 导航栏滚动效果
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>

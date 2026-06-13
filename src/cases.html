@@ -1,0 +1,125 @@
+<!-- ===== FILE: src/cases.html ===== -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>客户案例 - 云创科技</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 1. 导航栏 -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">云</span>
+        云创科技
+      </a>
+      <button class="nav-toggle" aria-label="菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">首页</a></li>
+        <li><a href="services.html" class="nav-link">服务</a></li>
+        <li><a href="cases.html" class="nav-link active">案例</a></li>
+        <li><a href="contact.html" class="nav-link">联系我们</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 2. 页面标题区 -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title">客户案例</h1>
+      <p class="page-subtitle">我们的成功案例，见证数字化转型的力量</p>
+    </div>
+  </section>
+
+  <!-- 3. 筛选按钮区 -->
+  <section class="tabs-section">
+    <div class="container">
+      <div class="filter-nav">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="金融">金融</button>
+        <button class="filter-btn" data-filter="零售">零售</button>
+        <button class="filter-btn" data-filter="教育">教育</button>
+        <button class="filter-btn" data-filter="制造">制造</button>
+      </div>
+
+      <!-- 4. 案例卡片网格布局 -->
+      <div class="cases-grid">
+        <div class="case-card" data-category="金融" data-id="1">
+          <span class="case-tag">金融</span>
+          <h3>某商业银行</h3>
+          <p>核心业务系统数字化升级</p>
+        </div>
+
+        <div class="case-card" data-category="金融" data-id="2">
+          <span class="case-tag">金融</span>
+          <h3>某保险公司</h3>
+          <p>移动理赔平台开发</p>
+        </div>
+
+        <div class="case-card" data-category="零售" data-id="3">
+          <span class="case-tag">零售</span>
+          <h3>某零售集团</h3>
+          <p>全渠道电商平台建设</p>
+        </div>
+
+        <div class="case-card" data-category="教育" data-id="4">
+          <span class="case-tag">教育</span>
+          <h3>某教育机构</h3>
+          <p>在线学习管理系统</p>
+        </div>
+
+        <div class="case-card" data-category="制造" data-id="5">
+          <span class="case-tag">制造</span>
+          <h3>某制造企业</h3>
+          <p>智能工厂数据中台</p>
+        </div>
+
+        <div class="case-card" data-category="制造" data-id="6">
+          <span class="case-tag">制造</span>
+          <h3>某物流公司</h3>
+          <p>物流跟踪系统开发</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. 案例详情弹窗 -->
+  <div class="modal" id="caseModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close">✕</button>
+      <h3 id="modalTitle">客户名称</h3>
+      <span class="modal-tag" id="modalTag">行业</span>
+      <p class="modal-description" id="modalDescription">详细描述</p>
+      <div class="tech-stack" id="modalTechStack">
+        <!-- 技术栈标签将在这里动态生成 -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">云创科技</div>
+        <p class="footer-tagline">让数字化更简单</p>
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">首页</a>
+          <a href="services.html" class="footer-link">服务</a>
+          <a href="cases.html" class="footer-link">案例</a>
+          <a href="contact.html" class="footer-link">联系我们</a>
+        </div>
+        <p class="footer-copyright">&copy; 2026 云创科技. 保留所有权利.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

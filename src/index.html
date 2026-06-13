@@ -1,0 +1,142 @@
+<!-- ===== FILE: src/index.html ===== -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>云创科技 - 让数字化更简单</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 1. 导航栏（与所有页面共享） -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">云</span>
+        云创科技
+      </a>
+      <button class="nav-toggle" aria-label="菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">首页</a></li>
+        <li><a href="services.html" class="nav-link">服务</a></li>
+        <li><a href="#services" class="nav-link">案例</a></li>
+        <li><a href="#contact" class="nav-link">联系我们</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 2. Hero 区 -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">让<span class="highlight">数字化</span>更简单</h1>
+      <p class="hero-subtitle">企业数字化转型服务商</p>
+      <a href="#services" class="btn btn-primary hero-cta">了解服务</a>
+    </div>
+  </section>
+
+  <!-- 3. 统计数字区 -->
+  <section class="stats">
+    <div class="container">
+      <div class="section-card">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">
+              <span class="counter" data-target="200">0</span><span class="stat-suffix">+</span>
+            </div>
+            <div class="stat-label">客户</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">
+              <span class="counter" data-target="50">0</span><span class="stat-suffix">+</span>
+            </div>
+            <div class="stat-label">团队成员</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">
+              <span class="counter" data-target="99">0</span><span class="stat-suffix">%</span>
+            </div>
+            <div class="stat-label">满意度</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 服务卡片区 -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">核心服务</h2>
+        <p class="section-subtitle">专业的数字化解决方案</p>
+      </div>
+      <div class="services-grid">
+        <div class="card service-card">
+          <div class="service-icon">🌐</div>
+          <h3>网站建设</h3>
+          <p>从企业官网到电商平台，提供全方位的网站建设服务，打造专业、高效的线上形象。</p>
+        </div>
+        <div class="card service-card">
+          <div class="service-icon">📱</div>
+          <h3>移动开发</h3>
+          <p>iOS、Android 原生应用及跨平台解决方案，让您的业务触达每一位移动用户。</p>
+        </div>
+        <div class="card service-card">
+          <div class="service-icon">💡</div>
+          <h3>技术咨询</h3>
+          <p>资深技术团队提供架构设计、技术选型、性能优化等全方位咨询服务。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. 客户 Logo 轮播区 -->
+  <section class="clients">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">信赖伙伴</h2>
+        <p class="section-subtitle">他们选择了云创科技</p>
+      </div>
+    </div>
+    <div class="clients-viewport">
+      <div class="clients-track">
+        <div class="client-item">某商业银行</div>
+        <div class="client-item">某保险公司</div>
+        <div class="client-item">某零售集团</div>
+        <div class="client-item">某教育机构</div>
+        <div class="client-item">某制造企业</div>
+        <div class="client-item">某物流公司</div>
+        <!-- 复制一份用于无缝滚动 -->
+        <div class="client-item">某商业银行</div>
+        <div class="client-item">某保险公司</div>
+        <div class="client-item">某零售集团</div>
+        <div class="client-item">某教育机构</div>
+        <div class="client-item">某制造企业</div>
+        <div class="client-item">某物流公司</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 页脚（与所有页面共享） -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">云创科技</div>
+        <p class="footer-tagline">让数字化更简单</p>
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">首页</a>
+          <a href="services.html" class="footer-link">服务</a>
+          <a href="#services" class="footer-link">案例</a>
+          <a href="#contact" class="footer-link">联系我们</a>
+        </div>
+        <p class="footer-copyright">&copy; 2026 云创科技. 保留所有权利.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
